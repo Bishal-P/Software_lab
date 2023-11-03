@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="anwesha.css">
+</head>
+<body>
+    <h1>Restaurant Menu</h1>
+    <div id="menu">
+        <div class="item">
+            <span class="name">Burger</span>
+            <span class="price">$5.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="item">
+            <span class="name">Pizza</span>
+            <span class="price">$10.99</span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <!-- Add more menu items here -->
+    </div>
+    
+    <h2>Cart</h2>
+    <div id="cart">
+        <!-- Cart items will be displayed here -->
+    </div>
+    
+    <h2>Total Amount</h2>
+    <div id="total-amount">$0.00</div>
+    
+    <h2>Payment Options</h2>
+    <select id="payment-options">
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="paypal">Cash on delivery</option>
+        <!-- Add more payment options here -->
+    </select>
+    <button id="checkout">Checkout</button>
+
+    <script src="anwesha.js"></script>
+</body>
+</html>

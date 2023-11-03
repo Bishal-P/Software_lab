@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="top">
+    <div class="line-up"></div>
+    <div class="nav-div">
+    <h1><a href="https://fontmeme.com/hindi/"><img src="https://fontmeme.com/permalink/231102/e8b5654471ea47d3270c7a4552e76473.png" alt="hindi" border="0"></a>
+        <a href="https://fontmeme.com/hindi/"><img src="https://fontmeme.com/permalink/231102/4e1a9aa15ef4ca88a883e42aa5519787.png" alt="hindi" border="0"></a>
+    </h1>
+    <nav class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html ">Menu</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="contact us">contact</a></li>
+            <li><a href="#">book-table</a></li>
+            <li><a href="anwesha.html">Cart</a></li>
+        </ul>
+    </nav>
+    <div class="login-name">
+        <span id="user-name">Welcome, <name>Naincy</name></span>
+    <span id="login-logo" class="Login-signup" onclick="hide()"><a href="#"><img src="login-text.png"></a></span>
+    </div>
+    </div>
+    <div class="line-up"></div>
+    </div>
+
+    <div class="home-content">
+        <div class="about">
+            <p class="p1">
+                it's not just food, it's an experience
+            </p>
+            <p class="p2">
+                We are helping you to get fresh and delicious food in few minutes by using our website.
+            </p>
+            <button class="menu-button-homepage"><a href="menu.html">View Menu</a></button>
+        </div>
+        <div class="food-image">
+            <img src="food.png" alt="">
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- -------------------------------------------------------------------------------------/ -->
+   
+   <!-- login form -->
+   
+   
+    <div class="login-background" id="login-background">
+    <div class="login-form" id="login-form">
+        <span id="close-form" onclick="hide()">X</span>
+        <div class="left-box">
+            <img src="login-image.jpg" alt="">
+
+        </div>
+        <div class="right-box">
+            <div class="form-box" id= "login-form-block">
+                <form  onsubmit="Login();return false;">
+                    
+                    <h1>Member Login</h1>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button id="submit-button" class="submit-button" type="submit" name="login" value="Login">Login</button>
+
+                </form>
+                <span>Forgot <a href="" onclick="showForgot();return false;">Username/Password</a></span>
+                <p><a onclick="show_register()">Create an account</a></p>
+            </div>
+            <div class="form-box"  id="forgot-user">
+                <form action="" onsubmit="forgot_submit();return false;">
+                    <h1>Account Recovery</h1>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                    <button class="submit-button" type="submit" name="login" value="Login">Get id</button>
+                </form>
+                <span onclick="show_login()"><a href="#">Login</a></span>
+                <p><a onclick="show_register()">Create an account</a></p>
+           
+            </div>
+
+            <div class="form-box"  id="register-user">
+                <form action="" onsubmit="register_submit();return false;">
+                    <h1>Create Account</h1>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="text" name="email" placeholder="Email" required>
+                    <input type="text" name="phone" placeholder="Phone" required>
+                    <input type="text" name="password" placeholder="password" required>
+                    <button class="submit-button" type="submit" name="Signup" value="Login">Sign Up</button>
+                </form>
+                <span onclick="show_login()"><a href="#">Login</a></span>
+                <!-- <p><a onclick="">Create an account</a></p> -->
+           
+            </div>
+            
+
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

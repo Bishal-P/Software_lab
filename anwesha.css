@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.add-to-cart {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#cart {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+#total-amount {
+    font-weight: bold;
+}
+
+#payment-options {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#checkout {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
